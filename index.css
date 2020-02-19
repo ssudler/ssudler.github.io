@@ -1,0 +1,64 @@
+#top-container {
+    position: relative;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    overflow: scroll;
+}
+
+#overlay {
+    position: relative;
+    display: flex;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+}
+
+button {
+    z-index: 100;
+}
+
+#sticky-bottom {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to right, #5f4121, white);
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+span {
+    font-size: 15px;
+}
+
+#left-label {
+    color: white;
+}
+
+#right-label {
+    color: black;
+}
+
+.player-class {
+    animation: slide-in .85s ease-in-out;
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-75px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
